@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <title>{{ page.title }}</title>
+      <!--<link rel="icon" type="image/x-icon" href="{{ site.url }}/favicon.png" />-->
+      <link rel="stylesheet" href="{{ site.url }}/css/slate.bootstrap.min.css" type="text/css" /> 
+      <link rel="stylesheet" href="{{ site.url }}/css/bootstrap-responsive.css" type="text/css" /> 
+      <link rel="stylesheet" href="{{ site.url }}/css/main.css" type="text/css" /> 
+   </head>
+   <body>
+      {% include menu.html %}
+      {{ content }}
+      <script src="js/jquery-1.9.1.min.js"></script>
+      <script src="js/jquery.masonry.min.js"></script>
+   </body>
+</html>
