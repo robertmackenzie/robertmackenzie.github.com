@@ -9,9 +9,11 @@ section: home
    <div class="row mason">
       {% for post in site.posts %}
       <div class="span4" style="margin-bottom: 20px;">
-	 <h1>{{ post.title }}</h1>
+	 <h2>{{ post.title }}</h2>
 	 <div class="align-justify">{{ post.content | truncatewords:150 }}</div>
-	 <a href="{{ post.url }}" class="btn btn-inverse btn-large">Read</a> 
+	 <a href="{{ post.url }}" class="btn btn-large btn-block">
+	   <i class="icon-book icon-white"></i> Read
+	 </a> 
       </div>
       {% endfor %}
    </div>
