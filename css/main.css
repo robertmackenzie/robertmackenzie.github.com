@@ -1,5 +1,6 @@
 body {
    color: #ACB5BD;
+   background-color: #041D24;
    padding-bottom: 100px;
 }
 
@@ -43,22 +44,35 @@ body {
 }
 
 code, pre {
+   border: none;
+   background-color: #e8e8e8;
    font-style: normal;
    font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
    font-size: 15px;
    line-height: 24px;
 }
 
-blockquote {
-   color: #7a8288; 
+hr {
+   color: #073642;
+   background-color: #073642;
+   border: 1px solid #073642;
 }
 
-blockquote:hover {
-   color: #7a8288;
+.highlight {
+   background-color: #e8e8e8;
+}
+
+blockquote {
+   color: #7a8288; 
+   border-left: 5px solid #073642;
 }
 
 pre {
    padding: 25px 8.5px;
    margin: 24px 0;
    letter-spacing: 0px;
+}
+
+code {
+   color: #cb4b16;
 }
