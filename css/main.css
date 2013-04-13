@@ -1,3 +1,43 @@
+body {
+   color: #ACB5BD;
+   padding-bottom: 100px;
+}
+
 .align-justify {
    text-align: justify;
+}
+
+.container-fluid {
+   margin: auto;
+   max-width: 968px;
+}
+
+.main-content {
+   font-family: Times, serif;
+   font-size: 21px;
+   line-height: 37px;
+   letter-spacing: 3px;
+}
+
+.main-conent h1, .main-content h2 {
+   font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+   padding-top: 40px;
+   padding-bottom: 4px;
+}
+
+.main-content p {
+   padding: 9px 0;
+   margin: 10px 0;
+}
+
+code, pre {
+   font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+   font-size: 15px;
+   line-height: 24px;
+}
+
+pre {
+   padding: 25px 8.5px;
+   margin: 24px 0;
+   letter-spacing: 0px;
 }
