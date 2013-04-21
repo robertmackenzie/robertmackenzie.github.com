@@ -1,7 +1,58 @@
+html {
+   overflow-y: scroll;
+}
+
 body {
    color: #ACB5BD;
    background-color: #041D24;
    padding-bottom: 100px;
+}
+
+.table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {
+   background-color: #073642;
+}
+
+.table a {
+   border: none !important;
+}
+
+.table-hover tbody tr:hover td,.table-hover tbody tr:hover th{background-color:#073642; cursor: pointer;}
+
+.table-bordered {
+   border: none;
+}
+
+.table-bordered th, .table-bordered td {
+   border-left: none;
+}
+
+.table th, .table td, table th, table td {
+   border-top: 3px solid #073642;
+}
+
+nav {
+   margin: 6px 225px 0 0;
+   float:right;
+}
+
+nav li {
+   padding: 10px;
+   list-style-type: none;
+   display: inline;
+}
+
+nav a {
+   padding-bottom: 4px;
+   font-style: italic;
+   font-family: Times, serif;
+   font-size: 21px;
+   line-height: 37px;
+   letter-spacing: 3px;
+}
+
+nav a:hover {
+   border-bottom: 2px solid #cb4b16;  
+   text-decoration: none;
 }
 
 .main-content a {
@@ -18,7 +69,7 @@ body {
    text-align: justify;
 }
 
-.container-fluid {
+.main-content {
    margin: auto;
    max-width: 968px;
 }
@@ -31,11 +82,31 @@ body {
    letter-spacing: 3px;
 }
 
+.hero-unit p {
+   font-style: italic;
+   font-size: 21px;
+   font-family: Times, serif;
+}
+
+.hero-unit h1 {
+   color: white;
+}
+
 .main-conent h1, .main-content h2 {
    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
    font-style: normal;
    padding-top: 40px;
    padding-bottom: 4px;
+}
+
+.heading {
+   font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+   font-style: normal;
+   font-weight: bold;
+}
+
+.white {
+   color: #fff;
 }
 
 .main-content p {
@@ -75,4 +146,14 @@ pre {
 
 code {
    color: #cb4b16;
+}
+
+.hero-unit {
+   border-bottom: 1px solid black !important;
+}
+
+.well, .hero-unit {
+   background-color: #073642;
+   border: none;
+   border-radius: 0;
 }
