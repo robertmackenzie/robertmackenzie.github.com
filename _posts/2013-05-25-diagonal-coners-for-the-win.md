@@ -1,6 +1,6 @@
 ---
 layout: post 
-title: Diagonal coners in CSS and SCSS
+title: Diagonal corners in CSS and SCSS
 strapline: Because reasons
 section: posts
 published: true
