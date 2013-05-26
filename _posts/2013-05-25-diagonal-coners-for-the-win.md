@@ -158,7 +158,7 @@ This is some content
 Boxes
 -----
 
-That's all well and good if you want a tab, but what about a box with existing content? Without adding additional markup to the page, or using images, the easiest way I could find is to use CSS :before and :after pseduo selectors.
+That's all well and good if you want a tab, but what about a box with existing content? Without adding additional markup to the page, or using images, the easiest way I could find is to use CSS `:before` and `:after` pseudo selectors.
 
 <style>
   .diagonal-corners {
@@ -306,7 +306,7 @@ To apply the technique, you then only need the one tiny snippet of SCSS!
   }
 {% endhighlight %}
 
-Add a bit of padding and a background color to the div (which for convenience I've just put inline...and voila.
+Add a bit of padding and a background color to the div (which for convenience I've just put inline) and voila.
 
 <div class='sass-diagonals' style='padding: 12px; background-color: #073642'>
   This is some content.
