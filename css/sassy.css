@@ -1,0 +1,28 @@
+.sass-diagonals {
+  position: relative;
+  display: inline-block;
+  margin: 28px 0; }
+  .sass-diagonals:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-right: 28px solid transparent;
+    border-left: 28px solid transparent;
+    border-top: 28px solid #073642;
+    left: -28px;
+    right: -28px;
+    bottom: -28px;
+    margin-left: 28px;
+    margin-right: 28px; }
+  .sass-diagonals:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-right: 28px solid transparent;
+    border-left: 28px solid transparent;
+    border-bottom: 28px solid #073642;
+    top: -28px;
+    left: -28px;
+    right: -28px;
+    margin-left: 28px;
+    margin-right: 28px; }

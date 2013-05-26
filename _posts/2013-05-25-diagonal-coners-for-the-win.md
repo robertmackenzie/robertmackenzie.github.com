@@ -259,15 +259,62 @@ SCSS or SASS (Syntactically Awesome StyleSheets) is a fantastic abstraction for 
 
 A mixin for the last technique I demonstrated would look a bit like this:
 
+> Note: I'm having to use \[AT\] instead of @ in the following example. Looks like Pygments (my syntax highlighter) doesn't always like @ characters, even if escaped.
 
+{% highlight scss %}
+  [AT]mixin diagonals($size: 28px, $border-color: #073642) {
+    position:relative;
+    display: inline-block;
+    margin: $size 0;
+
+    &:after {
+      content: "";
+      position:absolute; 
+      z-index: -1;
+      border-right: $size solid transparent;
+      border-left: $size solid transparent;
+      border-top: $size solid $border-color;
+      left:-$size;
+      right:-$size;
+      bottom:-$size;
+      margin-left: $size;
+      margin-right: $size;
+    }
+
+    &:before {
+      content: "";
+      position:absolute; 
+      z-index: -1;
+      border-right: $size solid transparent;
+      border-left: $size solid transparent;
+      border-bottom: $size solid $border-color;
+      top:-$size;
+      left:-$size;
+      right:-$size;
+      margin-left: $size;
+      margin-right: $size;
+    }
+
+  }
+{% endhighlight %}
 
 To apply the technique, you then only need the one tiny snippet of SCSS!
 
+{% highlight scss %}
+  .sass-diagonals {
+    @include diagonals();
+  }
+{% endhighlight %}
 
-Voila.
+Add a bit of padding and a background color to the div (which for convenience I've just put inline...and voila.
+
+<div class='sass-diagonals' style='padding: 12px; background-color: #073642'>
+  This is some content.
+</div>
 
 ***
 
 Now you can be cool too!
 ------------------------
 
+Like I said, there isn't any real reason for diagonal corners, but if you do want to use them, now you know how. If there is a more elegent way to do any of this, please email me: robertmackenzie[ at ]gmail.com.

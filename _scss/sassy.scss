@@ -1,0 +1,38 @@
+@mixin diagonals($size: 28px, $border-color: #073642) {
+  position:relative;
+  display: inline-block;
+  margin: $size 0;
+
+  &:after {
+    content: "";
+    position:absolute; 
+    z-index: -1;
+    border-right: $size solid transparent;
+    border-left: $size solid transparent;
+    border-top: $size solid $border-color;
+    left:-$size;
+    right:-$size;
+    bottom:-$size;
+    margin-left: $size;
+    margin-right: $size;
+  }
+
+  &:before {
+    content: "";
+    position:absolute; 
+    z-index: -1;
+    border-right: $size solid transparent;
+    border-left: $size solid transparent;
+    border-bottom: $size solid $border-color;
+    top:-$size;
+    left:-$size;
+    right:-$size;
+    margin-left: $size;
+    margin-right: $size;
+  }
+
+}
+
+.sass-diagonals {
+  @include diagonals(); 
+}
