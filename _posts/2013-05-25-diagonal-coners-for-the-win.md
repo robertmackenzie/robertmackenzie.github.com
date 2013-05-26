@@ -317,4 +317,4 @@ Add a bit of padding and a background color to the div (which for convenience I'
 Now you can be cool too!
 ------------------------
 
-Like I said, there isn't any real reason for diagonal corners, but if you do want to use them, now you know how. If there is a more elegent way to do any of this, please email me: robertmackenzie\[ at \]gmail.com.
+Like I said, there isn't any real reason for diagonal corners, but if you do want to use them, now you know how. If there is a more elegant way to do any of this, please email me: robertmackenzie\[ at \]gmail.com.
