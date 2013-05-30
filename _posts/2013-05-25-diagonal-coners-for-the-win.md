@@ -248,7 +248,7 @@ That's all well and good if you want a tab, but what about a box with existing c
 </div>
 {% endhighlight %}
 
-I attempted to just use one pseudo selector, but was unable to achive the effect without both. Unfortunately, this means the CSS is starting to get a bit verbose. Worse, to make adjustments to the size of the border, you are looking at changing 17 values! There might be a cleaner way of doing this in just CSS, but for something like this I turn to SCSS mixins.
+I attempted to just use one pseudo selector, but was unable to achieve the effect without both. Unfortunately, this means the CSS is starting to get a bit verbose. Worse, to make adjustments to the size of the border, you are looking at changing 17 values! There might be a cleaner way of doing this in just CSS, but for something like this I turn to SCSS mixins.
 
 ***
 
