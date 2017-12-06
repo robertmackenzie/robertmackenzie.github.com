@@ -1,44 +1,44 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
-   <head>
-      <meta charset="UTF-8">
-      <title>
-	 {% if page.title %}
-	    {{ page.title }}
-	 {% else %}
-	    Robert Mackenzie
-	 {% endif %}
-      </title>
-      <!--<link rel="icon" type="image/x-icon" href="{{ site.url }}/favicon.png" />-->
-      <link rel="stylesheet" href="{{ site.url }}/css/slate.bootstrap.min.css" type="text/css" /> 
-      <link rel="stylesheet" href="{{ site.url }}/css/bootstrap-responsive.css" type="text/css" /> 
-      <link rel="stylesheet" href="{{ site.url }}/css/main.css" type="text/css" /> 
-      <link rel="stylesheet" href="{{ site.url }}/css/syntax.css" type="text/css" /> 
-      <link rel="stylesheet" href="{{ site.url }}/css/sassy.css" type="text/css" /> 
-   </head>
-   <body>
-      <div class="container-fluid">
-	 <div class="row-fluid">
-	    <div class="span12">
-	       {% include menu.html %}
-	       <div class="hero-unit">
-		  <h1>
-		     {% if page.title %}
-			{{ page.title }}
-		     {% else %}
-			Robert Mackenzie
-		     {% endif %}
-		  </h1>
-		  <p>
-		     {% if page.strapline %}
-			{{ page.strapline }}
-		     {% endif %}
-		  </p>
-	       </div>
-	    </div>
-	 </div>
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      {% if page.title %}
+        {{ page.title }}
+      {% else %}
+        Robert Mackenzie
+      {% endif %}
+    </title>
+    <!--<link rel="icon" type="image/x-icon" href="{{ site.url }}/favicon.png" />-->
+    <link rel="stylesheet" href="{{ site.url }}/css/slate.bootstrap.min.css" type="text/css" /> 
+    <link rel="stylesheet" href="{{ site.url }}/css/bootstrap-responsive.css" type="text/css" /> 
+    <link rel="stylesheet" href="{{ site.url }}/css/main.css" type="text/css" /> 
+    <link rel="stylesheet" href="{{ site.url }}/css/syntax.css" type="text/css" /> 
+    <link rel="stylesheet" href="{{ site.url }}/css/sassy.css" type="text/css" /> 
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          {% include menu.html %}
+          <div class="hero-unit">
+            <h1>
+              {% if page.title %}
+                {{ page.title }}
+              {% else %}
+                Robert Mackenzie
+              {% endif %}
+            </h1>
+            <p>
+            {% if page.strapline %}
+              {{ page.strapline }}
+            {% endif %}
+            </p>
+          </div>
+        </div>
       </div>
-      {{ content }}
-      <script src="js/jquery-1.9.1.min.js"></script>
-   </body>
+    </div>
+    {{ content }}
+    <script src="js/jquery-1.9.1.min.js"></script>
+  </body>
 </html>
