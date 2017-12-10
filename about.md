@@ -12,6 +12,8 @@ Hobbies & Side Projects
 * Audio books (non-fiction and Sci-Fi/Fantasy)
 * Squash
 * [Homelab](https://www.reddit.com/r/homelab/). Currently a HP Gen8 Microserver.
+  Thinking about some network hardware. Either something integrated like a Cisco
+  890ISR or go mad with some Ubiquiti gear.
 * [Oasis](https://github.com/robertmackenzie/oasis) - A service to create services via REST. This was written mainly to enjoy some Ruby. A colleague also asked me how I might refactor the domain model in [lashd/mirage](https://github.com/lashd/mirage) and this project is me thinking out loud.
 * [Nand2Tetris](http://www.nand2tetris.org/) - Building a Modern Computer from First Principles. I've [finished part 1](https://github.com/robertmackenzie/nand2tetris), which is Chapters 1-6, which covers the hardware components.
 
