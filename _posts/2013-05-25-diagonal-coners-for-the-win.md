@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Diagonal corners in CSS and SCSS"
-categories: [frontend, css]
 published: true
 ---
 
