@@ -7,8 +7,6 @@ published: true
 
 Why on the 'tubes would you want diagonal corners? For me, they are a bit different; quirky, even. I like them. They remind me of shows like Battlestar Galactica, where the corners of all the documents are cut off to form diagonals (search for Battlestar Galactica paper on Google). They can also help with creating other, more complex CSS shapes. Anyway, I'll explain the fundamental technique, then demonstrate how to do a tab and then a box, before finally tidying the latter example into a SCSS mixin for easy reuse and maintainability. 
 
-***
-
 The fundamental bit: border crossings
 -------------------------------------
 
@@ -111,8 +109,6 @@ As a `block` element, it fills the space it is given. Try using `display: inline
 
 This technique can be applied in many ways. I'll demonstrate another version of the tab I've done here, and then a box with all the corners cut away to diagonals.
 
-***
-
 Tabs
 ----
 
@@ -123,7 +119,7 @@ What if you want a tab with some content and both the top-right and top-left cor
     height: 0px;
     border-right: 28px solid transparent;
     border-left: 28px solid transparent;
-    border-bottom: 28px solid #073642;
+    border-bottom: 28px solid yellow;
     padding: 0 5px 5px 5px;
     font-style: normal;
     display: inline-block;
@@ -139,7 +135,7 @@ This is some content
     height: 0px;
     border-right: 28px solid transparent;
     border-left: 28px solid transparent;
-    border-bottom: 28px solid #073642;
+    border-bottom: 28px solid yellow;
     padding: 0 5px 5px 5px;
     font-style: normal;
     display: inline-block;
@@ -152,8 +148,6 @@ This is some content
 </div>
 {% endhighlight %}
 
-***
-
 Boxes
 -----
 
@@ -162,20 +156,20 @@ That's all well and good if you want a tab, but what about a box with existing c
 <style>
   .diagonal-corners {
     height: 200px; width: 200px;
-    background-color: #073642;
+    background-color: yellow;
     padding: 12px;
     position:relative;
     display: inline-block;
     margin: 28px 0;
-  } 
+  }
 
   .diagonal-corners:after {
     content: "";
-    position:absolute; 
+    position:absolute;
     z-index: -1;
     border-right: 28px solid transparent;
     border-left: 28px solid transparent;
-    border-top: 28px solid #073642;
+    border-top: 28px solid yellow;
     left:-28px;
     right:-28px;
     bottom:-28px;
@@ -189,7 +183,7 @@ That's all well and good if you want a tab, but what about a box with existing c
     z-index: -1;
     border-right: 28px solid transparent;
     border-left: 28px solid transparent;
-    border-bottom: 28px solid #073642;
+    border-bottom: 28px solid yellow;
     top:-28px;
     left:-28px;
     right:-28px;
@@ -205,7 +199,7 @@ That's all well and good if you want a tab, but what about a box with existing c
 {% highlight css linenos %}
   .diagonal-corners {
     height: 200px; width: 200px;
-    background-color: #073642;
+    background-color: yellow;
     padding: 12px;
     position:relative;
     display: inline-block;
@@ -214,11 +208,11 @@ That's all well and good if you want a tab, but what about a box with existing c
 
   .diagonal-corners:after {
     content: "";
-    position:absolute; 
+    position:absolute;
     z-index: -1;
     border-right: 28px solid transparent;
     border-left: 28px solid transparent;
-    border-top: 28px solid #073642;
+    border-top: 28px solid yellow;
     left:-28px;
     right:-28px;
     bottom:-28px;
@@ -228,11 +222,11 @@ That's all well and good if you want a tab, but what about a box with existing c
 
   .diagonal-corners:before {
     content: "";
-    position:absolute; 
+    position:absolute;
     z-index: -1;
     border-right: 28px solid transparent;
     border-left: 28px solid transparent;
-    border-bottom: 28px solid #073642;
+    border-bottom: 28px solid yellow;
     top:-28px;
     left:-28px;
     right:-28px;
@@ -258,17 +252,15 @@ SCSS or SASS (Syntactically Awesome StyleSheets) is a fantastic abstraction for 
 
 A mixin for the last technique I demonstrated would look a bit like this:
 
-> Note: I'm having to use \[AT\] instead of @ in the following example. Looks like Pygments (my syntax highlighter) doesn't always like @ characters, even if escaped.
-
 {% highlight scss %}
-  [AT]mixin diagonals($size: 28px, $border-color: #073642) {
+  @mixin diagonals($size: 28px, $border-color: yellow) {
     position:relative;
     display: inline-block;
     margin: $size 0;
 
     &:after {
       content: "";
-      position:absolute; 
+      position:absolute;
       z-index: -1;
       border-right: $size solid transparent;
       border-left: $size solid transparent;
@@ -282,7 +274,7 @@ A mixin for the last technique I demonstrated would look a bit like this:
 
     &:before {
       content: "";
-      position:absolute; 
+      position:absolute;
       z-index: -1;
       border-right: $size solid transparent;
       border-left: $size solid transparent;
@@ -307,11 +299,9 @@ To apply the technique, you then only need the one tiny snippet of SCSS!
 
 Add a bit of padding and a background color to the div (which for convenience I've just put inline) and voila.
 
-<div class='sass-diagonals' style='padding: 12px; background-color: #073642'>
+<div class='diagonal-corners'>
   This is some content.
 </div>
-
-***
 
 Now you can be cool too!
 ------------------------
