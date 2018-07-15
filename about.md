@@ -21,9 +21,14 @@ Professional and Voluntary Achievements
 ---------------------------------------
 *(by organisation, in approx. chronological order, most recent first)*
 
-### Wild Hunt Limited (current)
+### Ovo Energy (6 month contract/current)
 
-* Available for backend, data, and infrastructure contracts.
+#### Greenfield data platform
+
+* On the job software engineering training for former database engineers.
+* Built a Kafka Connect based pipeline to migrate from SQL Server based data warehouse to Google BigQuery.
+* Maintained Google Cloud and Kubernetes based infrastructure, with Prometheus/Grafana for monitoring and alerting.
+* GDPR compliance work.
 
 ### BSkyB/Sky (5 years)
 
